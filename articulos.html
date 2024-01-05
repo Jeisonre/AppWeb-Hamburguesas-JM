@@ -8,30 +8,84 @@
 </head>
 <body>
     <header>
-        <input type="text" id="search" placeholder="Buscar...">
+        <div>
+            <a href="#"><img src="logo.png" alt="" id="logo"></a>
+        </div>
+        <h2>PRODUCTOS</h2>
+        <!-- <input type="text" id="search" placeholder="Buscar..."> -->
         <a href="carrito.html"><img src="cart-icon.png" alt="Carrito de Compras" id="cart-icon"></a>
     </header>
 
     <section>
-        <div class="product">
-            <img src="product1.jpg" alt="Producto 1">
+        <div class="product" id="product1">
+            <img class="img" src="product1.jpg" alt="Producto 1">
             <div>Nombre Producto 1</div>
             <div>Descripción del Producto 1</div>
             <div>Precio: $10.00</div>
-            <input type="number" value="1">
-            <a href="carrito.html"><button class="add-to-cart-btn">Agregar al Carrito</button></a>
+            <button class="btn" onclick="restar1('product1')">-</button>
+            <input class="num" type="number" id="numeroProduct1" min="1" max="10" step="1" value="1">
+            <button class="btn" onclick="sumar1('product1')">+</button><br><br>
+            <a href="#"><button class="add-to-cart-btn">Añadir al Carrito</button></a>
         </div>
 
-        <div class="product">
-            <img src="product2.jpg" alt="Producto 2">
+        <div class="product" id="product2">
+            <img class="img" src="product1.jpg" alt="Producto 2">
             <div>Nombre Producto 2</div>
             <div>Descripción del Producto 2</div>
             <div>Precio: $15.00</div>
-            <input type="number" value="1">
-            <a href="carrito.html"><button class="add-to-cart-btn">Agregar al Carrito</button></a>
+            <button class="btn" onclick="restar2('product2')">-</button>
+            <input class="num" type="text" id="numeroProduct2" value="0">
+            <button class="btn" onclick="sumar2('product2')">+</button><br><br>
+            <a href="carrito.html"><button class="add-to-cart-btn">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product">
+            <img class="img" src="product1.jpg" alt="Producto 2">
+            <div>Nombre Producto 2</div>
+            <div>Descripción del Producto 2</div>
+            <div>Precio: $15.00</div>
+            <button class="btn" onclick="restar()">-</button>
+            <input class="num" type="text" id="numero" value="1">
+            <button class="btn" onclick="sumar()">+</button><br><br>
+            <a href="carrito.html"><button class="add-to-cart-btn">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product">
+            <img class="img" src="product1.jpg" alt="Producto 2">
+            <div>Nombre Producto 2</div>
+            <div>Descripción del Producto 2</div>
+            <div>Precio: $15.00</div>
+            <button class="btn" onclick="restar()">-</button>
+            <input class="num" type="text" id="numero" value="1">
+            <button class="btn" onclick="sumar()">+</button><br><br>
+            <a href="carrito.html"><button class="add-to-cart-btn">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product">
+            <img class="img" src="product1.jpg" alt="Producto 2">
+            <div>Nombre Producto 2</div>
+            <div>Descripción del Producto 2</div>
+            <div>Precio: $15.00</div>
+            <button class="btn" onclick="restar()">-</button>
+            <input class="num" type="text" id="numero" value="1">
+            <button class="btn" onclick="sumar()">+</button><br><br>
+            <a href="carrito.html"><button class="add-to-cart-btn">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product">
+            <img class="img" src="product1.jpg" alt="Producto 2">
+            <div>Nombre Producto 2</div>
+            <div>Descripción del Producto 2</div>
+            <div>Precio: $15.00</div>
+            <button class="btn" onclick="restar()">-</button>
+            <input class="num" type="text" id="numero" value="1">
+            <button class="btn" onclick="sumar()">+</button><br><br>
+            <a href="carrito.html"><button class="add-to-cart-btn">Añadir al carrito</button></a>
         </div>
 
         <!-- Puedes agregar más productos según sea necesario -->
     </section>
+
+    <script src="articulos.js"></script>
 </body>
 </html>
