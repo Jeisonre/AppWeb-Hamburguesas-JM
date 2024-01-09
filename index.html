@@ -17,14 +17,15 @@
         <div id="customer-info">
             <div class="input-contenedor">
                 <i class="fas fa-user icon"></i>
-                <input type="text" placeholder="Nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             </div>
             <div class="input-contenedor">
                 <i class="fas fa-hashtag icon"></i>
-                <input type="number" placeholder="Cédula" pattern="[0-9]{9}"><br>
+                <input type="number" id="cedula" name="cedula" placeholder="Cédula" pattern="[0-9]{9}"><br>
             </div><br>
-            <a href="articulos.html"><button class="btn" id="add-to-cart-btn">Ingresar</button></a>
+            <a href="articulos.html"><button class="btn" id="add-to-cart-btn" onclick="ingresarDatos()">Ingresar</button></a>
         </div>
     </main>
+    <script src="perfilcard.js"></script>
 </body>
 </html>

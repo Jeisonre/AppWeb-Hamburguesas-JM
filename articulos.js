@@ -141,3 +141,7 @@ function validarMinimo() {
         numeroProduct6.value = 0;
     }
 }
+
+function mostrarDatos() {
+    
+}
